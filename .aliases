@@ -20,6 +20,9 @@ alias gl='git log'
 alias dot="git --git-dir=$HOME/code/dotfiles --work-tree=$HOME"
 alias da='dot add'
 
+# directories
+alias godev='$HOME/code/go'
+
 # "alert" alias for long running commands - usage:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'

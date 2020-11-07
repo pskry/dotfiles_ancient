@@ -1,0 +1,39 @@
+#include ".config/X11/theme-current"
+! #include "${XDG_CONFIG_HOME:-$HOME/.config}/X11/theme-current"
+
+! ------------------------------------------------------------------------------
+! URxvt Color theme
+! ------------------------------------------------------------------------------
+URxvt*font: xft:Monospace:size=9:antialias=true:autohinting=true,xft:Noto Emoji
+! URxvt*font: xft:Source Code Pro:pixelsize=13:antialias=true:autohinting=true,xft:Noto Emoji
+URxvt*scrollBar: false
+URxvt.intensityStyles: false
+URxvt.transparent:   false
+! URxvt.depth: 24
+URxvt.visualBell: false
+
+Xft.dpi: 96
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: false
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+
+urxvt*depth: 32
+urxvt*background: rgba:0000/0000/0200/c800
+!URxvt.background: [90]000000
+URxvt.perl-ext-common: default,matcher,fullscreen,clipboard
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+URxvt.keysym.F11: perl:fullscreen:switch
+URxvt.resize-font.smaller: C-Down
+URxvt.resize-font.bigger: C-Up
+URxvt.secondaryWheel: 1
+URxvt.internalBorder:  5
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste 
+URxvt.iso14755: False
+URxvt.keysym.Control-Up:   \033[1;5A
+URxvt.keysym.Control-Down:    \033[1;5B
+URxvt.keysym.Control-Left:    \033[1;5D
+URxvt.keysym.Control-Right:    \033[1;5C
